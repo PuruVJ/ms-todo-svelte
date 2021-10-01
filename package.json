@@ -1,0 +1,22 @@
+{
+  "name": "ms-todo-svelte",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.20",
+    "@sveltejs/kit": "^1.0.0-next.178",
+    "sass": "^1.42.1",
+    "svelte": "^3.43.1",
+    "svelte-preprocess": "^4.9.7",
+    "typescript": "^4.4.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@mdi/js": "^6.1.95",
+    "svelte-local-storage-store": "^0.2.4"
+  }
+}

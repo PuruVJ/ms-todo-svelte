@@ -1,0 +1,9 @@
+body {
+  --app-color-dark: #222428;
+  --app-color-dark-rgb: 34, 36, 40;
+  --app-color-dark-contrast: var(--app-color-light);
+
+  --app-color-light: #f4f5f8;
+  --app-color-light-rgb: 244, 245, 248;
+  --app-color-light-contrast: var(--app-color-dark);
+}
