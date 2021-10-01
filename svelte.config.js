@@ -10,6 +10,11 @@ const config = {
     target: '#svelte',
     adapter: staticAdapter(),
 
+    prerender: {
+      crawl: true,
+      enabled: true
+    },
+
     vite: {
       resolve: {
         alias: {
