@@ -1,9 +1,11 @@
 <script>
   import SideNav from '$components/SideNav.svelte';
+  import '../css/global.scss';
 </script>
 
 <div class="container">
   <SideNav />
+
   <main>
     <!-- Main body goes here -->
   </main>

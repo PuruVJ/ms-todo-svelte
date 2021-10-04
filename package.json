@@ -2,17 +2,17 @@
   "name": "ms-todo-svelte",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite serve"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.20",
-    "@sveltejs/kit": "^1.0.0-next.178",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.26",
     "sass": "^1.42.1",
     "svelte": "^3.43.1",
-    "svelte-preprocess": "^4.9.7",
-    "typescript": "^4.4.3"
+    "svelte-preprocess": "^4.9.8",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.2"
   },
   "type": "module",
   "dependencies": {
