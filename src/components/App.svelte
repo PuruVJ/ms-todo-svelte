@@ -1,13 +1,17 @@
 <script>
   import SideNav from '$components/SideNav.svelte';
+  import { Route, Router } from 'svelte-routing';
   import '../css/global.scss';
+  import List from './List.svelte';
 </script>
 
 <div class="container">
   <SideNav />
 
   <main>
-    <!-- Main body goes here -->
+    <Router url="/">
+      <Route path="/:listID" component={List} />
+    </Router>
   </main>
 
   <div id="cover-img" aria-hidden="true" />

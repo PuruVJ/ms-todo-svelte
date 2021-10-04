@@ -1,8 +1,9 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
+import unpluginIcons from 'unplugin-icons/vite';
 
 export default defineConfig({
-  plugins: [svelte()],
+  plugins: [svelte(), unpluginIcons({ compiler: 'svelte' })],
   resolve: {
     alias: {
       $stores: new URL('./src/stores/', import.meta.url).pathname,
