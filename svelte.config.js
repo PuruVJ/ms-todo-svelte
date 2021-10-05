@@ -13,7 +13,8 @@ const config = {
 
     prerender: {
       crawl: true,
-      enabled: true
+      enabled: true,
+      entries: ['*', '/my-day']
     },
 
     vite: {
