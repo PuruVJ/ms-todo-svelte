@@ -1,40 +1,31 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
+    "module": "es2020",
+    "lib": ["es2020", "DOM"],
+    "target": "es2019",
     /**
-      Svelte Preprocess cannot figure out whether you have a value or a type, so tell TypeScript
-      to enforce using `import type` instead of `import` for Types.
-     */
+			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
+			to enforce using \`import type\` instead of \`import\` for Types.
+			*/
     "importsNotUsedAsValues": "error",
     "isolatedModules": true,
+    "resolveJsonModule": true,
     /**
-      To have warnings/errors of the Svelte compiler at the correct position,
-      enable source maps by default.
-     */
+			To have warnings/errors of the Svelte compiler at the correct position,
+			enable source maps by default.
+			*/
     "sourceMap": true,
-
-    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "target": "esnext",
-    "module": "esnext",
-    "resolveJsonModule": true,
-    //    "baseUrl": "./src",
-    "paths": {
-      "$stores/*": ["./src/stores/*"],
-      "$components/*": ["./src/components/*"],
-      "$data/*": ["./src/data/*"]
-    },
-    /**
-     * Typecheck JS in `.svelte` and `.js` files by default.
-     * Disable checkJs if you'd like to use dynamic types in JS.
-     * Note that setting allowJs false does not prevent the use
-     * of JS in `.svelte` files.
-     */
+    "baseUrl": ".",
     "allowJs": true,
-    "checkJs": true
+    "checkJs": true,
+    "paths": {
+      "$stores/*": ["src/stores/*"],
+      "$data/*": ["src/data/*"]
+    }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "./*.ts"],
-  "exclude": ["node_modules/**/*"]
+  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
 }

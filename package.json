@@ -2,24 +2,21 @@
   "name": "ms-todo-svelte",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite serve"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.26",
-    "autoprefixer": "^10.3.6",
-    "chalk": "^4.1.2",
+    "@sveltejs/adapter-static": "^1.0.0-next.20",
+    "@sveltejs/kit": "^1.0.0-next.178",
     "sass": "^1.42.1",
     "svelte": "^3.43.1",
-    "svelte-preprocess": "^4.9.8",
-    "typescript": "^4.4.3",
-    "unplugin-icons": "^0.12.7",
-    "vite": "^2.6.2"
+    "svelte-preprocess": "^4.9.7",
+    "typescript": "^4.4.3"
   },
   "type": "module",
   "dependencies": {
-    "svelte-local-storage-store": "^0.2.4",
-    "svelte-routing": "^1.6.0"
+    "@mdi/js": "^6.1.95",
+    "svelte-local-storage-store": "^0.2.4"
   }
 }

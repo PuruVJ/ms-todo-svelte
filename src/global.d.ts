@@ -1,5 +1,4 @@
-/// <reference types="svelte" />
-/// <reference types="vite/client" />
+/// <reference types="@sveltejs/kit" />
 
 type ObjectKeys<Obj> = Obj extends object
   ? (keyof Obj)[]
