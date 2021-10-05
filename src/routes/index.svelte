@@ -1,6 +1,7 @@
-<script lang="ts">
-  import { goto } from '$app/navigation';
-  import { onMount } from 'svelte';
+<script lang="ts" context="module">
+  import type { Load } from '@sveltejs/kit';
 
-  onMount(() => goto('/my-day'));
+  export const load: Load = () => {
+    return { redirect: '/my-day', status: 301 };
+  };
 </script>

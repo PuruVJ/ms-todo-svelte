@@ -4,7 +4,7 @@ import {
   mdiStarOutline,
   mdiWhiteBalanceSunny
 } from '@mdi/js';
-import { writable } from 'svelte-local-storage-store';
+import { writable } from 'svelte/store';
 import type { Theme } from '$data/themes';
 
 export type List = {
@@ -14,7 +14,7 @@ export type List = {
   icon: string;
 };
 
-export const lists = writable<Record<string, List>>('lists', {
+export const lists = writable<Record<string, List>>({
   'my-day': {
     icon: mdiWhiteBalanceSunny,
     title: 'My Day',
