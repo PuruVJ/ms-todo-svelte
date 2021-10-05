@@ -1,22 +1,21 @@
-import {
-  mdiCalendarMonthOutline,
-  mdiFormatListBulleted,
-  mdiStarOutline,
-  mdiWhiteBalanceSunny
-} from '@mdi/js';
-import { writable } from 'svelte/store';
 import type { Theme } from '$data/themes';
+import { writable } from 'svelte-local-storage-store';
+import type { SvelteComponentDev } from 'svelte/internal';
+import Star12Regular from '~icons/fluent/star-12-regular';
+import WeatherSunny32Filled from '~icons/fluent/weather-sunny-32-filled';
+import Calendar from '~icons/fluent/calendar-ltr-24-regular';
+import AllTasksIcon from '~icons/fluent/list-20-filled';
 
 export type List = {
   title: string;
   theme: Theme;
   type: 'preset' | 'custom';
-  icon: string;
+  icon: typeof SvelteComponentDev;
 };
 
-export const lists = writable<Record<string, List>>({
+export const lists = writable<Record<string, List>>('lists', {
   'my-day': {
-    icon: mdiWhiteBalanceSunny,
+    icon: WeatherSunny32Filled,
     title: 'My Day',
     type: 'preset',
     theme: {
@@ -25,7 +24,7 @@ export const lists = writable<Record<string, List>>({
     }
   },
   important: {
-    icon: mdiStarOutline,
+    icon: Star12Regular,
     title: 'Important',
     type: 'preset',
     theme: {
@@ -34,7 +33,7 @@ export const lists = writable<Record<string, List>>({
     }
   },
   planned: {
-    icon: mdiCalendarMonthOutline,
+    icon: Calendar,
     title: 'Planned',
     type: 'preset',
     theme: {
@@ -43,7 +42,7 @@ export const lists = writable<Record<string, List>>({
     }
   },
   tasks: {
-    icon: mdiFormatListBulleted,
+    icon: AllTasksIcon,
     title: 'Tasks',
     type: 'preset',
     theme: {

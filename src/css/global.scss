@@ -22,6 +22,10 @@ body {
   position: relative;
 
   background-color: var(--app-color-dark);
+
+  &:focus-visible {
+    box-shadow: none !important;
+  }
 }
 
 body #cover-img {

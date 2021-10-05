@@ -1,6 +1,5 @@
 <script lang="ts">
   import { lists } from '$stores/lists.store';
-  import Icon from './Icon.svelte';
 
   const listsArr = Object.entries($lists);
 </script>
@@ -14,7 +13,9 @@
         href="/{id}"
         aria-label="{title} list"
       >
-        <span class="icon"> <Icon path={icon} fill={theme.color} /> </span>
+        <span class="icon">
+          <svelte:component this={icon} style="color: {theme.color}" />
+        </span>
         <span class="title">{title}</span>
       </a>
     {/each}
