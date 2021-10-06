@@ -3,14 +3,14 @@ lockfileVersion: 5.3
 specifiers:
   '@iconify-json/fluent': ^1.0.2
   '@sveltejs/adapter-static': ^1.0.0-next.20
-  '@sveltejs/kit': ^1.0.0-next.179
+  '@sveltejs/kit': ^1.0.0-next.180
   autoprefixer: ^10.3.7
   sass: ^1.42.1
   svelte: ^3.43.1
   svelte-local-storage-store: ^0.2.4
   svelte-preprocess: ^4.9.8
   typescript: ^4.4.3
-  unplugin-icons: ^0.12.9
+  unplugin-icons: ^0.12.10
 
 dependencies:
   svelte-local-storage-store: 0.2.4_svelte@3.43.1
@@ -18,13 +18,13 @@ dependencies:
 devDependencies:
   '@iconify-json/fluent': 1.0.2
   '@sveltejs/adapter-static': 1.0.0-next.20
-  '@sveltejs/kit': 1.0.0-next.179_sass@1.42.1+svelte@3.43.1
+  '@sveltejs/kit': 1.0.0-next.180_sass@1.42.1+svelte@3.43.1
   autoprefixer: 10.3.7
   sass: 1.42.1
   svelte: 3.43.1
   svelte-preprocess: 4.9.8_e4d174f1a3c6f6c9a7413fc1fdd258af
   typescript: 4.4.3
-  unplugin-icons: 0.12.9
+  unplugin-icons: 0.12.10
 
 packages:
 
@@ -73,8 +73,8 @@ packages:
     resolution: {integrity: sha512-vutVoloX35E6QnnrNofToOWn/er/Li2yoR15NbTPZ26Gp3M6A2ckQJNMJrDbBA5XZsktNIXchIVGaADnKIJrow==}
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.179_sass@1.42.1+svelte@3.43.1:
-    resolution: {integrity: sha512-yKo7rkr6NZq0fmHAiJThDH+BZEccWm2dAS3P6h2esak0VyT8NuSQIHViYn8b5VJoFf3yEHf8dSHsgYdSk+K4+Q==}
+  /@sveltejs/kit/1.0.0-next.180_sass@1.42.1+svelte@3.43.1:
+    resolution: {integrity: sha512-SbqZqgtw1KnyV1CXqOLQUQTxOksONvNUGeyalAQem8XHPiV7iNslPhXbTBxHyBhD3rvY4Nzd1kPp9/zCVeWsog==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
@@ -116,8 +116,8 @@ packages:
       - supports-color
     dev: true
 
-  /@types/node/16.10.2:
-    resolution: {integrity: sha512-zCclL4/rx+W5SQTzFs9wyvvyCwoK9QtBpratqz2IYJ3O8Umrn0m3nsTv0wQBk9sRGpvUe9CwPDrQFB10f1FIjQ==}
+  /@types/node/16.10.3:
+    resolution: {integrity: sha512-ho3Ruq+fFnBrZhUYI46n/bV2GjwzSkwuT4dTf0GkuNFmnb8nq4ny2z9JEVemFi6bdEJanHLlYfy9c6FN9B9McQ==}
     dev: true
 
   /@types/pug/2.0.5:
@@ -127,7 +127,7 @@ packages:
   /@types/sass/1.16.1:
     resolution: {integrity: sha512-iZUcRrGuz/Tbg3loODpW7vrQJkUtpY2fFSf4ELqqkApcS2TkZ1msk7ie8iZPB86lDOP8QOTTmuvWjc5S0R9OjQ==}
     dependencies:
-      '@types/node': 16.10.2
+      '@types/node': 16.10.3
     dev: true
 
   /@types/throttle-debounce/2.1.0:
@@ -150,7 +150,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.17.3
-      caniuse-lite: 1.0.30001264
+      caniuse-lite: 1.0.30001265
       fraction.js: 4.1.1
       normalize-range: 0.1.2
       picocolors: 0.2.1
@@ -185,8 +185,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001264
-      electron-to-chromium: 1.3.859
+      caniuse-lite: 1.0.30001265
+      electron-to-chromium: 1.3.860
       escalade: 3.1.1
       node-releases: 1.1.77
       picocolors: 0.2.1
@@ -202,8 +202,8 @@ packages:
       semver: 7.3.5
     dev: true
 
-  /caniuse-lite/1.0.30001264:
-    resolution: {integrity: sha512-Ftfqqfcs/ePiUmyaySsQ4PUsdcYyXG2rfoBVsk3iY1ahHaJEw65vfb7Suzqm+cEkwwPIv/XWkg27iCpRavH4zA==}
+  /caniuse-lite/1.0.30001265:
+    resolution: {integrity: sha512-YzBnspggWV5hep1m9Z6sZVLOt7vrju8xWooFAgN6BA5qvy98qPAPb7vNUzypFaoh2pb3vlfzbDO8tB57UPGbtw==}
     dev: true
 
   /cheap-watch/1.0.4:
@@ -256,8 +256,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /electron-to-chromium/1.3.859:
-    resolution: {integrity: sha512-gXRXKNWedfdiKIzwr0Mg/VGCvxXzy+4SuK9hp1BDvfbCwx0O5Ot+2f4CoqQkqEJ3Zj/eAV/GoAFgBVFgkBLXuQ==}
+  /electron-to-chromium/1.3.860:
+    resolution: {integrity: sha512-gWwGZ+Wv4Mou2SJRH6JQzhTPjL5f95SX7n6VkLTQ/Q/INsZLZNQ1vH2GlZjozKyvT0kkFuCmWTwIoCj+/hUDPw==}
     dev: true
 
   /es6-promise/3.3.1:
@@ -574,11 +574,15 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /kolorist/1.5.0:
+    resolution: {integrity: sha512-pPobydIHK884YBtkS/tWSZXpSAEpcMbilyun3KL37ot935qL2HNKm/tI45i/Rd+MxdIWEhm7/LmUQzWZYK+Qhg==}
+    dev: true
+
   /local-pkg/0.3.0:
     resolution: {integrity: sha512-JapWObmC38atpkIh2Y8M3223TP+GsdtR4s28Kut7Q98PT6MX7VwvAwPs2/rxpwi+hbDiHM4+dIvRCU67k+qHag==}
     engines: {node: '>=14'}
     dependencies:
-      mlly: 0.2.4
+      mlly: 0.2.5
     dev: true
 
   /locate-path/6.0.0:
@@ -632,8 +636,8 @@ packages:
       minimist: 1.2.5
     dev: true
 
-  /mlly/0.2.4:
-    resolution: {integrity: sha512-Wkv+SoSMoHUe9jkMKId08gj6JlSmCZ8TKGKhR3QcTFXaYml23oSk5qZWEDsvbzljeY3YZMnjzkSa365HaMzIJA==}
+  /mlly/0.2.5:
+    resolution: {integrity: sha512-Zp2qMM0jt+ni5lRX8LiWFQWK3XORYqFCc+xeTS2Ae7lcur/roNMXqK9bcnMyAj81J1qxkaggYcyopt2X6ENl1Q==}
     dependencies:
       import-meta-resolve: 1.1.1
     dev: true
@@ -647,12 +651,8 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /nanocolors/0.2.12:
-    resolution: {integrity: sha512-SFNdALvzW+rVlzqexid6epYdt8H9Zol7xDoQarioEFcFN0JHo4CYNztAxmtfgGTVRCmFlEOqqhBpoFGKqSAMug==}
-    dev: true
-
-  /nanoid/3.1.28:
-    resolution: {integrity: sha512-gSu9VZ2HtmoKYe/lmyPFES5nknFrHa+/DT9muUFWFMi6Jh9E1I7bkvlQ8xxf1Kos9pi9o8lBnIOkatMhKX/YUw==}
+  /nanoid/3.1.29:
+    resolution: {integrity: sha512-dW2pUSGZ8ZnCFIlBIA31SV8huOGCHb6OwzVCc7A69rb/a+SgPBwfmLvK5TKQ3INPbRkcI8a/Owo0XbiTNH19wg==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: true
@@ -741,7 +741,7 @@ packages:
     resolution: {integrity: sha512-f/ZFyAKh9Dnqytx5X62jgjhhzttjZS7hMsohcI7HEI5tjELX/HxCy3EFhsRxyzGvrzFF+82XPvCS8T9TFleVJw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.1.28
+      nanoid: 3.1.29
       picocolors: 0.2.1
       source-map-js: 0.6.2
     dev: true
@@ -945,8 +945,8 @@ packages:
     hasBin: true
     dev: true
 
-  /unplugin-icons/0.12.9:
-    resolution: {integrity: sha512-SsuSqFAsbaRNweEI7W1uDinD/XfXNrAUQOaC+35XB3YRZleBjlr2XxW3J4Z0YmMkI0JXRwqalWh6xOds2jXKww==}
+  /unplugin-icons/0.12.10:
+    resolution: {integrity: sha512-lOgHtTx620UstuMYa9T8jkDVF2iVwyfEEYp2QL6rBdBsvIUZ+L6/Bd9WQTGyW/hAiTPv7P0ow2QtFRdEtUnXkg==}
     peerDependencies:
       '@svgr/core': ^5.5.0
       '@vue/compiler-sfc': ^3.0.2
@@ -967,8 +967,8 @@ packages:
       '@iconify/json-tools': 1.0.10
       '@iconify/utils': 1.0.13
       debug: 4.3.2
+      kolorist: 1.5.0
       local-pkg: 0.3.0
-      nanocolors: 0.2.12
       unplugin: 0.2.16
     transitivePeerDependencies:
       - rollup
