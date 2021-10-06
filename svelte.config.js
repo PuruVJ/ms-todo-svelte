@@ -1,6 +1,5 @@
 import preprocess from 'svelte-preprocess';
 import staticAdapter from '@sveltejs/adapter-static';
-import unpluginIcons from 'unplugin-icons/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,7 +17,6 @@ const config = {
     },
 
     vite: {
-      plugins: [unpluginIcons({ compiler: 'svelte', autoInstall: true })],
       resolve: {
         alias: {
           $stores: new URL('./src/stores/', import.meta.url).pathname,

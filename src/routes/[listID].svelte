@@ -1,6 +1,6 @@
 <script>
   import { page } from '$app/stores';
-  import List from '$components/List.svelte';
+  import ListView from '$components/List/ListView.svelte';
   import SideNav from '$components/SideNav.svelte';
   import { lists } from '$stores/lists.store';
 
@@ -11,13 +11,11 @@
   <SideNav />
   <main>
     {#if list !== undefined}
-      <List {list} />
+      <ListView {list} listID={$page.params.listID} />
     {:else}
       Can't find list
     {/if}
   </main>
-
-  <div id="cover-img" aria-hidden="true" />
 </div>
 
 <style lang="scss">

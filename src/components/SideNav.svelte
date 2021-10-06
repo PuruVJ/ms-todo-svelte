@@ -1,46 +1,66 @@
 <script lang="ts">
   import { lists } from '$stores/lists.store';
+  import Icon from '$components/Icon.svelte';
+  import { themes } from '$data/themes';
 
-  const listsArr = Object.entries($lists);
+  $: listsArr = Object.entries($lists);
 </script>
 
-<aside>
-  <h2>Todo App</h2>
-  <nav>
-    {#each listsArr as [id, { icon, theme, title, type }], i}
-      <a
-        class:bordered={listsArr[i + 1]?.[1]?.type !== type}
-        href="/{id}"
-        aria-label="{title} list"
-      >
-        <span class="icon">
-          <svelte:component this={icon} style="color: {theme.color}" />
-        </span>
-        <span class="title">{title}</span>
-      </a>
-    {/each}
+<div class="container">
+  <aside>
+    <h2>Todo App</h2>
+    <nav>
+      {#each listsArr as [id, { icon, theme, title, type }], i}
+        <a
+          class:bordered={listsArr.length - 1 !== i && listsArr[i + 1]?.[1]?.type !== type}
+          href="/{id}"
+          aria-label="{title} list"
+        >
+          <span class="icon">
+            <Icon fill={themes[theme].color} path={icon} />
+          </span>
+          <span class="title">{title}</span>
+        </a>
+      {/each}
 
-    <span id="spacer" />
+      <span id="spacer" />
 
-    <!-- NewListButton -->
-  </nav>
-</aside>
+      <!-- NewListButton -->
+    </nav>
+  </aside>
+</div>
 
 <style lang="scss">
+  .container {
+    width: 20rem;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   aside {
     display: flex;
     flex-direction: column;
 
-    width: 18rem;
-    height: 100%;
+    width: 90%;
+    height: 96%;
 
-    background-color: rgba(var(--app-color-light-rgb), 0.25);
-    backdrop-filter: blur(40px);
+    padding: 1rem 0 0;
+
+    background-color: rgba(var(--app-color-light-rgb), 0.4);
+    backdrop-filter: blur(70px);
 
     color: var(--app-color-light-contrast);
 
-    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 6px 2px;
-    border: solid 1px rgba(var(--app-color-light-rgb), 0.1);
+    box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.113), 0px 0px 17.9px rgba(0, 0, 0, 0.167),
+      0px 0px 80px rgba(0, 0, 0, 0.28);
+    border-radius: 1rem;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   nav {

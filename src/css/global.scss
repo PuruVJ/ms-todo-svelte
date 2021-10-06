@@ -28,32 +28,6 @@ body {
   }
 }
 
-body #cover-img {
-  content: '';
-
-  display: block;
-
-  position: fixed;
-  left: 0;
-  top: 0;
-
-  width: 100%;
-  height: 100%;
-
-  overflow: hidden;
-
-  z-index: -1;
-
-  opacity: 1;
-
-  background-image: url(/wallpapers/1.webp);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-
-  transition: opacity 150ms ease-in;
-}
-
 * {
   transition: background 150ms ease-in, background-color 150ms ease-in;
 

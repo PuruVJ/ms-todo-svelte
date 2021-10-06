@@ -8,17 +8,16 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@iconify-json/fluent": "^1.0.2",
     "@sveltejs/adapter-static": "^1.0.0-next.20",
     "@sveltejs/kit": "^1.0.0-next.180",
     "autoprefixer": "^10.3.7",
     "sass": "^1.42.1",
     "svelte": "^3.43.1",
     "svelte-preprocess": "^4.9.8",
-    "typescript": "^4.4.3",
-    "unplugin-icons": "^0.12.10"
+    "typescript": "^4.4.3"
   },
   "dependencies": {
+    "@mdi/js": "^6.2.95",
     "svelte-local-storage-store": "^0.2.4"
   }
 }

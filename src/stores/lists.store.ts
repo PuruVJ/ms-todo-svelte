@@ -1,53 +1,42 @@
-import type { Theme } from '$data/themes';
+import type { Theme, themes } from '$data/themes';
+import {
+  mdiCalendarMonthOutline,
+  mdiFormatListBulleted,
+  mdiStarOutline,
+  mdiWhiteBalanceSunny
+} from '@mdi/js';
 import { writable } from 'svelte-local-storage-store';
-import type { SvelteComponentDev } from 'svelte/internal';
-import Star12Regular from '~icons/fluent/star-12-regular';
-import WeatherSunny32Filled from '~icons/fluent/weather-sunny-32-filled';
-import Calendar from '~icons/fluent/calendar-ltr-24-regular';
-import AllTasksIcon from '~icons/fluent/list-20-filled';
 
 export type List = {
   title: string;
-  theme: Theme;
+  theme: keyof typeof themes;
   type: 'preset' | 'custom';
-  icon: typeof SvelteComponentDev;
+  icon: string;
 };
 
 export const lists = writable<Record<string, List>>('lists', {
   'my-day': {
-    icon: WeatherSunny32Filled,
+    icon: mdiWhiteBalanceSunny,
     title: 'My Day',
     type: 'preset',
-    theme: {
-      image: 'url(/wallpapers/6.jpg)',
-      color: '#FFEE58'
-    }
+    theme: 'blinding-beach'
   },
   important: {
-    icon: Star12Regular,
+    icon: mdiStarOutline,
     title: 'Important',
     type: 'preset',
-    theme: {
-      image: 'linear-gradient(to left, #fc466b, #3f5efb)',
-      color: '#E88796'
-    }
+    theme: 'tingy-blue-red'
   },
   planned: {
-    icon: Calendar,
+    icon: mdiCalendarMonthOutline,
     title: 'Planned',
     type: 'preset',
-    theme: {
-      image: 'linear-gradient(to left, #00f260, #0575e6)',
-      color: '#50E29B'
-    }
+    theme: 'blue-green'
   },
   tasks: {
-    icon: AllTasksIcon,
+    icon: mdiFormatListBulleted,
     title: 'Tasks',
     type: 'preset',
-    theme: {
-      image: 'linear-gradient(to left, #12c2e9, #c471ed, #f64f59)',
-      color: '#74C7FB'
-    }
+    theme: 'pink-to-blue'
   }
 });
