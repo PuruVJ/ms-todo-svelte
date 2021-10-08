@@ -151,7 +151,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001265
-      electron-to-chromium: 1.3.860
+      electron-to-chromium: 1.3.861
       escalade: 3.1.1
       node-releases: 1.1.77
       picocolors: 0.2.1
@@ -206,8 +206,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /electron-to-chromium/1.3.860:
-    resolution: {integrity: sha512-gWwGZ+Wv4Mou2SJRH6JQzhTPjL5f95SX7n6VkLTQ/Q/INsZLZNQ1vH2GlZjozKyvT0kkFuCmWTwIoCj+/hUDPw==}
+  /electron-to-chromium/1.3.861:
+    resolution: {integrity: sha512-GZyflmpMnZRdZ1e2yAyvuFwz1MPSVQelwHX4TJZyXypB8NcxdPvPNwy5lOTxnlkrK13EiQzyTPugRSnj6cBgKg==}
     dev: true
 
   /es6-promise/3.3.1:

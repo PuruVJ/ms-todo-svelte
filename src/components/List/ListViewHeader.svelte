@@ -1,9 +1,21 @@
 <script lang="ts">
   import { lists } from '$stores/lists.store';
   import { mdiDotsVertical } from '@mdi/js';
+  import { clickOutside, focusOutside } from '$/actions';
+  import { fadeIn, fadeOut } from '$/fade';
   import Icon from '../Icon.svelte';
 
   export let listID: string;
+
+  let listOptionsMenuVisible = false;
+
+  function show() {
+    listOptionsMenuVisible = true;
+  }
+
+  function hide() {
+    listOptionsMenuVisible = false;
+  }
 </script>
 
 <div class="container">
@@ -15,10 +27,23 @@
     />
   </div>
 
-  <div class="options-area">
-    <button>
+  <div
+    class="options-area"
+    use:clickOutside={{ callback: hide }}
+    use:focusOutside={{ callback: hide }}
+  >
+    <button on:click={show} on:focus={show}>
       <Icon path={mdiDotsVertical} size={30} />
     </button>
+
+    {#if listOptionsMenuVisible}
+      <div class="menu-parent" in:fadeIn out:fadeOut>
+        <!--  -->
+        {#await import('./ListOptions.svelte') then { default: ListOptions }}
+          <ListOptions {listID} />
+        {/await}
+      </div>
+    {/if}
   </div>
 </div>
 
@@ -76,6 +101,8 @@
     justify-content: flex-end;
     align-items: center;
 
+    position: relative;
+
     button {
       background-color: rgba(var(--app-color-light-rgb), 0.4);
       backdrop-filter: blur(40px);
@@ -94,5 +121,14 @@
 
       cursor: pointer;
     }
+  }
+
+  .menu-parent {
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
+    z-index: 1;
+
+    margin-top: 4.5px;
   }
 </style>

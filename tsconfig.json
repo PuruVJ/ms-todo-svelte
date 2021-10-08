@@ -24,7 +24,10 @@
     "checkJs": true,
     "paths": {
       "$stores/*": ["src/stores/*"],
-      "$data/*": ["src/data/*"]
+      "$data/*": ["src/data/*"],
+      "$components/*": ["src/components/*"],
+      "$actions/*": ["src/actions/*"],
+      "$/*": ["src/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
