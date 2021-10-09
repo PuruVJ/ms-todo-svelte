@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { lists } from '$stores/lists.store';
-  import { mdiDotsVertical } from '@mdi/js';
   import { clickOutside, focusOutside } from '$/actions';
   import { fadeIn, fadeOut } from '$/fade';
+  import { lists } from '$stores/lists.store';
+  import { mdiDotsVertical } from '@mdi/js';
   import Icon from '../Icon.svelte';
+  import ListOptions from './ListOptions.svelte';
 
   export let listID: string;
 
@@ -38,10 +39,7 @@
 
     {#if listOptionsMenuVisible}
       <div class="menu-parent" in:fadeIn out:fadeOut>
-        <!--  -->
-        {#await import('./ListOptions.svelte') then { default: ListOptions }}
-          <ListOptions {listID} />
-        {/await}
+        <ListOptions {listID} />
       </div>
     {/if}
   </div>
