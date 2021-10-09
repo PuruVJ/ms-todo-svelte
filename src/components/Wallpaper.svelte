@@ -31,6 +31,12 @@
   $: changeBackground(image);
 </script>
 
+<svelte:head>
+  {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as num}
+    <link rel="prefetch" href="/wallpapers/{num}.jpg" />
+  {/each}
+</svelte:head>
+
 <div aria-hidden="true" style="opacity: {opacity};background-image: {backgroundImage};" />
 
 <style lang="scss">

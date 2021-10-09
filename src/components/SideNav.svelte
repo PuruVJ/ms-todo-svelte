@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { lists } from '$stores/lists.store';
   import Icon from '$components/Icon.svelte';
   import { themes } from '$data/themes';
+  import { lists } from '$stores/lists.store';
   import NewListButton from './NewListButton.svelte';
 
   $: listsArr = Object.entries($lists);
