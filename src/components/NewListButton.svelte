@@ -41,6 +41,8 @@
     await tick();
     inputEl.focus();
   }
+
+  $: console.log(listNameInput);
 </script>
 
 <button class="new-list-button" tabindex={inputVisible ? -1 : 0} on:click={buttonOnClick}>
@@ -49,7 +51,7 @@
       type="text"
       bind:this={inputEl}
       bind:value={listNameInput}
-      on:blur={() => !listNameInput && (inputVisible = true)}
+      on:blur={() => !listNameInput && (inputVisible = false)}
       on:keydown={(e) => e.key === 'Enter' && listNameInput && createList()}
       maxlength="20"
     />
@@ -100,6 +102,7 @@
       width: 100%;
 
       border: none;
+      border-radius: 0 0 1rem 1rem;
 
       padding: 0 1rem;
       box-sizing: border-box;
@@ -111,7 +114,7 @@
       background-color: rgba(var(--app-color-light-rgb), 0.15);
 
       &:focus {
-        box-shadow: none;
+        box-shadow: none !important;
       }
     }
   }

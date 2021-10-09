@@ -2,6 +2,7 @@
   import { page } from '$app/stores';
   import ListView from '$components/List/ListView.svelte';
   import SideNav from '$components/SideNav.svelte';
+  import NewTask from '$components/Task/NewTask.svelte';
   import { lists } from '$stores/lists.store';
 
   $: list = $lists[$page.params.listID];
@@ -12,6 +13,8 @@
   <main>
     {#if list !== undefined}
       <ListView {list} listID={$page.params.listID} />
+
+      <NewTask listID={$page.params.listID} />
     {:else}
       Can't find list
     {/if}
