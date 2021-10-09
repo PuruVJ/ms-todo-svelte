@@ -1,4 +1,4 @@
-import type { Theme, themes } from '$data/themes';
+import type { ThemeName } from '$data/themes';
 import {
   mdiCalendarMonthOutline,
   mdiFormatListBulleted,
@@ -9,7 +9,7 @@ import { writable } from 'svelte-local-storage-store';
 
 export type List = {
   title: string;
-  theme: keyof typeof themes;
+  theme: ThemeName;
   type: 'preset' | 'custom';
   icon: string;
 };

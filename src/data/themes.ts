@@ -127,3 +127,5 @@ export const themes = makeThemes({
     color: 'rgba(244, 245, 248, 1)'
   }
 });
+
+export type ThemeName = keyof typeof themes;

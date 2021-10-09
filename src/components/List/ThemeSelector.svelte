@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { themes } from '$data/themes';
+  import { ThemeName, themes } from '$data/themes';
   import { lists } from '$stores/lists.store';
 
   export let listID: string;
 
-  function changeListTheme(themeName: string) {
-    $lists[listID].theme = themeName as keyof typeof themes;
+  function changeListTheme(themeName: ThemeName) {
+    $lists[listID].theme = themeName;
   }
 </script>
 

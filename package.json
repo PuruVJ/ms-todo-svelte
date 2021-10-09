@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@mdi/js": "^6.2.95",
+    "nanoid": "^3.1.29",
     "svelte-local-storage-store": "^0.2.4"
   }
 }

@@ -2,6 +2,7 @@
   import { lists } from '$stores/lists.store';
   import Icon from '$components/Icon.svelte';
   import { themes } from '$data/themes';
+  import NewListButton from './NewListButton.svelte';
 
   $: listsArr = Object.entries($lists);
 </script>
@@ -22,11 +23,11 @@
           <span class="title">{title}</span>
         </a>
       {/each}
-
-      <span id="spacer" />
-
-      <!-- NewListButton -->
     </nav>
+
+    <span class="spacer" />
+
+    <NewListButton />
   </aside>
 </div>
 
@@ -67,6 +68,8 @@
     padding: 0;
 
     margin: 2rem 0;
+
+    height: 100%;
   }
 
   a {
@@ -100,7 +103,7 @@
     }
   }
 
-  #spacer {
+  .spacer {
     flex: 1 1 auto;
   }
 </style>

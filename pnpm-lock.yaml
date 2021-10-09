@@ -5,6 +5,7 @@ specifiers:
   '@sveltejs/adapter-static': ^1.0.0-next.20
   '@sveltejs/kit': ^1.0.0-next.180
   autoprefixer: ^10.3.7
+  nanoid: ^3.1.29
   sass: ^1.42.1
   svelte: ^3.43.1
   svelte-local-storage-store: ^0.2.4
@@ -13,6 +14,7 @@ specifiers:
 
 dependencies:
   '@mdi/js': 6.2.95
+  nanoid: 3.1.29
   svelte-local-storage-store: 0.2.4_svelte@3.43.1
 
 devDependencies:
@@ -517,7 +519,6 @@ packages:
     resolution: {integrity: sha512-dW2pUSGZ8ZnCFIlBIA31SV8huOGCHb6OwzVCc7A69rb/a+SgPBwfmLvK5TKQ3INPbRkcI8a/Owo0XbiTNH19wg==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
 
   /node-releases/1.1.77:
     resolution: {integrity: sha512-rB1DUFUNAN4Gn9keO2K1efO35IDK7yKHCdCaIMvFO7yUYmmZYeDjnGKle26G4rwj+LKRQpjyUUvMkPglwGCYNQ==}
