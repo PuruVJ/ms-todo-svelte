@@ -13,7 +13,7 @@
     completedCollapsed = !completedCollapsed;
   }
 
-  function getSortedList(tasks: Record<string, Task>) {
+  function getSortedList(tasks: Record<string, Task>, listID: string) {
     const tasksArr = Object.entries(tasks).filter(([, { listIDs }]) => listIDs.includes(listID));
 
     const completedTasks = tasksArr.filter(([, { completed }]) => completed);
@@ -22,7 +22,7 @@
     return [...incompleteTasks, ...completedTasks];
   }
 
-  $: sortedList = getSortedList($tasks);
+  $: sortedList = getSortedList($tasks, listID);
 </script>
 
 <div class="container">
@@ -41,7 +41,9 @@
       </button>
     {/if}
 
-    <TaskItem {listID} {taskID} />
+    {#if !(completed && completedCollapsed)}
+      <TaskItem {listID} {taskID} />
+    {/if}
   {/each}
 </div>
 

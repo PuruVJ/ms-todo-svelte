@@ -79,11 +79,11 @@
     display: block;
     box-sizing: border-box;
 
-    position: absolute;
+    position: fixed;
     bottom: 0em;
     z-index: 2;
 
-    width: 100%;
+    width: calc(100vw - 334px);
 
     padding: 1.3rem 2rem;
   }

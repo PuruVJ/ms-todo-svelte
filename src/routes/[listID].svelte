@@ -31,7 +31,11 @@
   }
 
   main {
-    overflow: hidden;
+    height: 100%;
+
+    padding-bottom: 4rem;
+
+    overflow: auto;
 
     position: relative;
   }

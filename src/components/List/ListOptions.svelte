@@ -4,7 +4,7 @@
   export let listID: string;
 </script>
 
-<div class="container">
+<div class="container" tabindex="0">
   <ThemeSelector {listID} />
 </div>
 
