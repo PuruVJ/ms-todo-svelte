@@ -6,8 +6,6 @@
 
 <div class="container">
   <ThemeSelector {listID} />
-
-  <hr />
 </div>
 
 <style lang="scss">

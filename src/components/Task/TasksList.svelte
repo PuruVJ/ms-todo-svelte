@@ -23,7 +23,6 @@
   }
 
   $: sortedList = getSortedList($tasks);
-  $: console.log(sortedList);
 </script>
 
 <div class="container">
