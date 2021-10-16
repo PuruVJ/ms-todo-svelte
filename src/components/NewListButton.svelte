@@ -41,8 +41,6 @@
     await tick();
     inputEl.focus();
   }
-
-  $: console.log(listNameInput);
 </script>
 
 <button class="new-list-button" tabindex={inputVisible ? -1 : 0} on:click={buttonOnClick}>
@@ -80,8 +78,8 @@
 
     border: none;
     border-top: solid 0.5px rgba(var(--app-color-dark-rgb), 0.3);
+    border-radius: 0 0 1rem 1rem;
 
-    margin-bottom: 0.1rem;
     padding: 0;
 
     &:hover,

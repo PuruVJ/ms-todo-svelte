@@ -1,4 +1,5 @@
 <script lang="ts">
+  import TasksList from '$components/Task/TasksList.svelte';
   import type { List } from '$stores/lists.store';
   import Wallpaper from '../Wallpaper.svelte';
   import ListViewHeader from './ListViewHeader.svelte';
@@ -15,6 +16,8 @@
 
 <section class="container">
   <ListViewHeader {listID} />
+
+  <TasksList {listID} />
 </section>
 
 <style lang="scss">

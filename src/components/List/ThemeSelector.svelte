@@ -1,17 +1,17 @@
 <script lang="ts">
-  import { ThemeName, themes } from '$data/themes';
+  import { themes } from '$data/themes';
   import { lists } from '$stores/lists.store';
 
   export let listID: string;
 
-  function changeListTheme(themeName: ThemeName) {
-    $lists[listID].theme = themeName;
-  }
+  // function changeListTheme(themeName: ThemeName) {
+  //   $lists[listID].theme = themeName;
+  // }
 </script>
 
 <section class="container">
   {#each Object.entries(themes) as [themeName, { image }]}
-    <button on:click={() => changeListTheme(themeName)} style="background-image: {image}" />
+    <button on:click={() => ($lists[listID].theme = themeName)} style="background-image: {image}" />
   {/each}
 </section>
 
