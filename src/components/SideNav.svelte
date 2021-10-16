@@ -10,7 +10,12 @@
 <div class="container">
   <aside>
     <h2>Beautiful Todo</h2>
-    <a href="https://github.com/PuruVJ/ms-todo-svelte" target="_blank" rel="noopener">
+    <a
+      class="source-code"
+      href="https://github.com/PuruVJ/ms-todo-svelte"
+      target="_blank"
+      rel="noopener"
+    >
       Source Code
     </a>
     <nav>
@@ -61,14 +66,14 @@
     box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.113), 0px 0px 17.9px rgba(0, 0, 0, 0.167),
       0px 0px 80px rgba(0, 0, 0, 0.28);
     border-radius: 1rem;
+  }
 
-    a {
-      font-size: 0.7rem;
-      text-align: center;
-      color: rgba(var(--app-color-dark-rgb), 0.8);
+  .source-code {
+    font-size: 0.7rem;
+    text-align: center;
+    color: rgba(var(--app-color-dark-rgb), 0.8);
 
-      width: 100%;
-    }
+    width: 100%;
   }
 
   h2 {

@@ -28,11 +28,7 @@
     />
   </div>
 
-  <div
-    class="options-area"
-    use:clickOutside={{ callback: hide }}
-    use:focusOutside={{ callback: hide }}
-  >
+  <div class="options-area" use:clickOutside={hide} use:focusOutside={hide}>
     <button on:click={show} on:focus={show}>
       <Icon path={mdiDotsVertical} size={30} />
     </button>
