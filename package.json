@@ -8,18 +8,18 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.20",
-    "@sveltejs/kit": "^1.0.0-next.184",
-    "autoprefixer": "^10.3.7",
-    "sass": "^1.42.1",
-    "svelte": "^3.43.1",
-    "svelte-preprocess": "^4.9.8",
-    "typescript": "^4.4.3"
+    "@sveltejs/adapter-static": "^1.0.0-next.22",
+    "@sveltejs/kit": "^1.0.0-next.202",
+    "autoprefixer": "^10.4.0",
+    "sass": "^1.45.0",
+    "svelte": "^3.44.3",
+    "svelte-preprocess": "^4.10.1",
+    "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@mdi/js": "^6.2.95",
-    "date-fns": "^2.25.0",
-    "nanoid": "^3.1.29",
-    "svelte-local-storage-store": "^0.2.4"
+    "@mdi/js": "^6.5.95",
+    "date-fns": "^2.27.0",
+    "nanoid": "^3.1.30",
+    "svelte-local-storage-store": "^0.2.6"
   }
 }
