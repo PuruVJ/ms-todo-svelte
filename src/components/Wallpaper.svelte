@@ -32,7 +32,7 @@
 </script>
 
 <svelte:head>
-  {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as num}
+  {#each Array.from({ length: 15 }, (_, i) => i + 1) as num}
     <link rel="prefetch" href="/wallpapers/{num}.jpg" />
   {/each}
 </svelte:head>
