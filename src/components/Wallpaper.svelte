@@ -1,10 +1,12 @@
 <script lang="ts">
   import { browser } from '$app/env';
   import { themes } from '$data/themes';
-  import type { List } from '$stores/lists.store';
+  import { List, lists } from '$stores/lists.store';
   import { waitFor } from '../helpers/wait-for';
 
-  export let list: List;
+  export let listID: string;
+
+  $: list = $lists[listID];
 
   $: ({ image } = themes[list.theme]);
 

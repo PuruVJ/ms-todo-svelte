@@ -50,7 +50,7 @@
   <SideNav />
   <main>
     {#if list !== undefined}
-      <ListView {list} listID={$page.params.listID} />
+      <ListView listID={$page.params.listID} />
 
       <NewTask listID={$page.params.listID} />
     {:else}
