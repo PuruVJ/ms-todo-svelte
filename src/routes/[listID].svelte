@@ -1,6 +1,5 @@
 <script>
   import { pullFromArray } from '$/helpers/array';
-
   import { page } from '$app/stores';
   import ListView from '$components/List/ListView.svelte';
   import SideNav from '$components/SideNav.svelte';
