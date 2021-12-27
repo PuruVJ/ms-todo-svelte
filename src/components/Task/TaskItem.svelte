@@ -1,6 +1,5 @@
 <script lang="ts">
   import { pullFromArray } from '$/helpers/array';
-
   import Icon from '$components/Icon.svelte';
   import { lists } from '$stores/lists.store';
   import { tasks } from '$stores/tasks.store';
