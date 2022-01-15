@@ -43,30 +43,6 @@ body {
   outline: none;
 }
 
-h1,
-h2 {
-  margin: 0;
-
-  line-height: 1.618;
-  font-family: 'Jetbrains Mono', monospace;
-}
-
-h1 {
-  font-size: 2.618rem;
-}
-
-h2 {
-  font-size: 1.618rem;
-}
-
-hr {
-  height: 0.5px;
-
-  border: none;
-
-  background-color: rgba(var(--app-color-dark-rgb), 0.3);
-}
-
 input {
   font-family: 'Roboto', sans-serif;
 }
