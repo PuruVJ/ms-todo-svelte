@@ -24,7 +24,7 @@
     <input
       autocomplete="off"
       bind:value={$lists[listID].title}
-      style="width: {$lists[listID].title.length}ch;"
+      style:width="{$lists[listID].title.length}ch"
     />
   </div>
 

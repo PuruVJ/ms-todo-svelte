@@ -3,15 +3,11 @@
   import { lists } from '$stores/lists.store';
 
   export let listID: string;
-
-  // function changeListTheme(themeName: ThemeName) {
-  //   $lists[listID].theme = themeName;
-  // }
 </script>
 
 <section class="container">
   {#each Object.entries(themes) as [themeName, { image }]}
-    <button on:click={() => ($lists[listID].theme = themeName)} style="background-image: {image}" />
+    <button style:background-image={image} on:click={() => ($lists[listID].theme = themeName)} />
   {/each}
 </section>
 

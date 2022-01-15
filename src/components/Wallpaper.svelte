@@ -39,7 +39,7 @@
   {/each}
 </svelte:head>
 
-<div aria-hidden="true" style="opacity: {opacity};background-image: {backgroundImage};" />
+<div aria-hidden="true" style:opacity={`${opacity}`} style:background-image={backgroundImage} />
 
 <style lang="scss">
   div {
