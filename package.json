@@ -3,23 +3,25 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.26",
-    "@sveltejs/kit": "^1.0.0-next.231",
-    "autoprefixer": "^10.4.2",
-    "sass": "^1.48.0",
-    "svelte": "^3.46.2",
-    "svelte-preprocess": "^4.10.1",
-    "typescript": "^4.5.4"
+    "@sveltejs/adapter-static": "^1.0.0-next.41",
+    "@sveltejs/kit": "^1.0.0-next.460",
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.8",
+    "svelte": "^3.49.0",
+    "svelte-preprocess": "^4.10.7",
+    "typescript": "^4.8.2",
+    "vite": "3.1.0-beta.1"
   },
   "dependencies": {
-    "@mdi/js": "^6.5.95",
-    "date-fns": "^2.28.0",
-    "nanoid": "^3.1.32",
-    "svelte-local-storage-store": "^0.2.6"
+    "@mdi/js": "^7.0.96",
+    "date-fns": "^2.29.2",
+    "nanoid": "^4.0.0",
+    "svelte-local-storage-store": "^0.3.1"
   }
 }
