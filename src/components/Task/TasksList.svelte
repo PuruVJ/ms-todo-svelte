@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from '$components/Icon.svelte';
-  import { Task, tasks } from '$stores/tasks.store';
+  import { type Task, tasks } from '$stores/tasks.store';
   import { mdiChevronDown, mdiChevronRight } from '@mdi/js';
   import TaskItem from './TaskItem.svelte';
 

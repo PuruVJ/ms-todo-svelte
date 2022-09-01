@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from '$components/Icon.svelte';
   import { lists } from '$stores/lists.store';
-  import { Task, tasks } from '$stores/tasks.store';
+  import { type Task, tasks } from '$stores/tasks.store';
   import { mdiCheckboxBlankCircleOutline, mdiPlus, mdiSend } from '@mdi/js';
   import { endOfDay, format, isAfter, isPast, startOfDay } from 'date-fns';
   import { nanoid } from 'nanoid';

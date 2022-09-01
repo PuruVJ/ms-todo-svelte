@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import { themes } from '$data/themes';
-  import { List, lists } from '$stores/lists.store';
+  import { lists } from '$stores/lists.store';
   import { waitFor } from '../helpers/wait-for';
 
   export let listID: string;

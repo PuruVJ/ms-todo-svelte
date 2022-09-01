@@ -2,7 +2,7 @@
   import { randInt } from '$/helpers/rand-int';
   import { goto } from '$app/navigation';
   import { themes } from '$data/themes';
-  import { List, lists } from '$stores/lists.store';
+  import { type List, lists } from '$stores/lists.store';
   import { mdiMenu, mdiPlus } from '@mdi/js';
   import { nanoid } from 'nanoid';
   import { tick } from 'svelte';
